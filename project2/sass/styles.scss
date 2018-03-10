@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.main p {
+    margin-bottom: 10px
+}
+
+.nyt-icon {
+    background-image: url(/images/nyt-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+
+}
+
+.section-choose {
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+
+.dropdown {
+    position: absolute;
+}
+
+.btn-secondary {
+    color: black;
+    border-color: black;
+    background-color: #ffffff;
+    width: 110px;
+    height: 25px;
+}
+
+#dropdownMenuButton {
+    padding-top: 0px;
+    text-align: left;
+}
+
+footer {
+    color: #c2c2c2;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -30px;
+}
+
+footer span {
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 320px) {
+    body {
+        justify-content: center;
+    }
+
+    .main {
+        justify-content: center;
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    .section-choose {
+        padding-bottom: 20px;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+    footer {
+        width: 67%;
+        margin-left: 0px;
+    }
+
+    
+    footer p {
+        width: 100%;
+    }
+
+@media (min-width: 600px) {
+    body {
+        justify-content: center;
+    }
+
+    .main {
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        justify-content: initial;
+    }
+    
+    .main {
+        margin-left: 50px;
+        justify-content: initial;
+        flex-direction: initial;
+    }
+}
