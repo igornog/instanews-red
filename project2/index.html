@@ -3,34 +3,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="sass/styles.scss">
+    <link rel="stylesheet" type="text/css" href="build/css/style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <title>Instanews App</title>
 </head>
 <body>
-    <div class="main">
-        <div class="nyt-icon">
+    <div class="header-desktop">
+        <div class="nyt-icon" a="">
         </div>
         <div class="section-choose">
             <p>Choose a section:
             </p>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" 
-                aria-haspopup="true" aria-expanded="false">Sections ...</button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
+            <select class="sections">
+                <option value="">Sections ...</option>
+                <option value="home">Home</option>
+                <option value="opinion">Opinion</option>
+                <option value="world">World</option>
+                <option value="national">National</option>
+                <option value="politics">Politics</option>
+                <option value="upshot">Upshot</option>
+                <option value="nyregion">Nyregion</option>
+                <option value="business">Business</option>
+                <option value="technology">Technology</option>
+                <option value="science">Science</option>
+                <option value="health">Health</option>
+                <option value="sports">Sports</option>
+                <option value="arts">Arts</option>
+                <option value="books">Books</option>
+                <option value="movies">Movies</option>
+                <option value="theater">Theater</option>
+                <option value="sundayreview">Sundayreview</option>
+                <option value="fashion">Fashion</option>
+                <option value="tmagazine">Tmagazine</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="magazine">Magazine</option>
+                <option value="realestate">Realestate</option>
+                <option value="automobiles">Automobiles</option>
+                <option value="obituaries">Obituaries</option>
+                <option value="insider">Insider</option>
+            </select>
         </div>
     </div>
-    <footer>
-        <p>© Copiright 2016 <span>instanews</span></p>
+    <ul class="newsfeed"></ul>
+    <footer class="copyright">
+        <p>© Copyright 2016 <span>instanews</span></p>
     </footer>
+    <div id="loader">
+        <img src="images/ajax-loader.gif">
+    </div>
+    <script src="js/main.js"></script>    
 </body>
 </html>

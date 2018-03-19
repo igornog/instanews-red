@@ -1,110 +1,199 @@
 body {
   background-color: black;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  color: #ffffff;
+  font-size: 16px;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px; }
+  margin: 0px;
+  height: auto;
+  max-width: 100%; }
 
-.main {
+.header-desktop {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
-
-.main p {
-  margin-bottom: 10px; }
+          align-items: center;
+  right: 0px; }
 
 .nyt-icon {
-  background-image: url(/images/nyt-logo.svg);
+  background-image: url("../../images/nyt-logo.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  margin-left: 0%; }
 
 .section-choose {
-  padding-bottom: 20px;
-  padding-left: 40px; }
+  padding-bottom: 40px; }
 
-.dropdown {
-  position: absolute; }
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  padding: 0%;
+  margin-top: 20px; }
+  ul img {
+    vertical-align: text-top;
+    border-style: none;
+    width: 25%;
+    height: 250px;
+    background-size: cover; }
 
-.btn-secondary {
-  color: black;
-  border-color: black;
-  background-color: #ffffff;
-  width: 110px;
-  height: 25px; }
+ul li {
+  position: relative;
+  display: grid;
+  list-style-type: none;
+  height: 500px; }
+  ul li p {
+    color: #ffffff;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0;
+    height: 100px;
+    text-align: initial; }
+  ul li a {
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
 
-#dropdownMenuButton {
-  padding-top: 0px;
-  text-align: left; }
+.li-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left; }
 
-footer {
+.copyright {
   color: #c2c2c2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  position: absolute;
-  margin-left: 70px;
+  position: relative;
   margin-top: -30px; }
+  .copyright span {
+    text-transform: uppercase; }
 
-footer span {
-  text-transform: uppercase; }
+.copyright p {
+  height: auto; }
+
+#loader {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  margin: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#loader img {
+  width: 70px;
+  height: auto; }
 
 @media (min-width: 320px) {
   body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .main {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .section-choose {
-    padding-bottom: 20px;
-    padding-left: 20px;
-    margin-top: 20px; } }
-
-footer {
-  width: 67%;
-  margin-left: 0px; }
-
-footer p {
-  width: 100%; }
-
-@media (min-width: 600px) {
-  body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .main {
+            flex-direction: column;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 0px; } }
+    margin: 0%; }
+  .header-desktop {
+    display: inline-grid;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15%;
+    margin-bottom: 15%; }
+    .header-desktop p {
+      margin-bottom: 10px; }
+  ul {
+    top: 450px; }
+    ul li {
+      width: 100%; }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 0%;
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+  p {
+    margin-top: 15%; } }
+
+@media (min-width: 600px) {
+  .header-desktop {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    position: relative;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    margin-bottom: 70px;
+    margin-top: 0%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .nyt-icon {
+    margin-left: 0; }
+  ul {
+    top: 150px; }
+    ul li {
+      width: 33.3334%; }
+  .copyright {
+    position: absolute;
+    margin-bottom: 20px;
+    top: 560px; } }
 
 @media (min-width: 1000px) {
   body {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial; }
-  .main {
+  .nyt-icon {
+    margin-left: 50px; }
+  .header-desktop {
     margin-left: 50px;
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
@@ -112,4 +201,30 @@ footer p {
     -webkit-box-orient: initial;
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
-            flex-direction: initial; } }
+            flex-direction: initial;
+    position: absolute; }
+  .section-choose {
+    margin-top: 0;
+    margin-left: 10px; }
+  ul {
+    position: absolute; }
+    ul li {
+      width: 25%; }
+  .wrap-footer {
+    width: 200px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+    height: 70px; }
+    .copyright p {
+      margin-left: 70px;
+      margin-top: 0%; } }

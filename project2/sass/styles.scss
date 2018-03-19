@@ -1,105 +1,191 @@
+
+@import 'variables.scss';
+
 body {
     background-color: black;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    color: #ffffff;
+    font-size: $base-font;
+    color: white;
     display: flex;
     align-items: center;
     margin: 0px;
+    height: auto;
+    max-width: 100%;
 }
 
-.main {
+.header-desktop {
     width: 100%;
     display: flex;
-    align-items: center; 
-}
+    align-items: center;
+    right: 0px;
 
-.main p {
-    margin-bottom: 10px
 }
 
 .nyt-icon {
-    background-image: url(/images/nyt-logo.svg);
+    background-image: url('../../images/nyt-logo.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     width: 200px;
     height: 200px;
-
+    margin-left: 0%;
 }
 
 .section-choose {
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
-
-.dropdown {
-    position: absolute;
-}
-
-.btn-secondary {
-    color: black;
-    border-color: black;
-    background-color: #ffffff;
-    width: 110px;
-    height: 25px;
-}
-
-#dropdownMenuButton {
-    padding-top: 0px;
-    text-align: left;
-}
-
-footer {
-    color: #c2c2c2;
+ul {
     display: flex;
-    align-self: flex-end;
-    position: absolute;
-    margin-left: 70px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    padding: 0%;
+    margin-top: 20px;
+
+    img{
+        vertical-align: text-top;
+        border-style: none;
+        width: 25%;
+        height: 250px;
+        background-size: cover;
+        
+    }
+}
+
+ul li {
+    position: relative;
+    display: grid;
+    list-style-type: none;
+    height: 500px;
+
+    p {
+        color: $white;
+        font-size: $base-font;
+        background: rgba(0, 0, 0, 0.7);
+        margin-bottom: 0;
+        height: 100px;
+        text-align: initial;
+    }
+    
+    a {
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+
+}
+
+.li-background {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: top left;
+}
+
+.copyright {
+    color: $medium-grey;
+    display: flex;
+    position: relative;
     margin-top: -30px;
+    
+    span {
+        text-transform: uppercase;
+    }
 }
 
-footer span {
-    text-transform: uppercase;
+.copyright p {
+    height: auto;
 }
 
+#loader {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    margin: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#loader img {
+    width: 70px;
+    height: auto;
+}
 
 @media (min-width: 320px) {
     body {
-        justify-content: center;
-    }
-
-    .main {
-        justify-content: center;
-        margin-left: 0px;
+        display: flex;
         flex-direction: column;
+        flex-flow: wrap;
+        text-align: center;
+        justify-content: center;
+        margin: 0%;
     }
 
-    .section-choose {
-        padding-bottom: 20px;
-        padding-left: 20px;
-        margin-top: 20px;
+    .header-desktop {
+        display: inline-grid;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+
+        p {
+            margin-bottom: 10px
+        }
     }
+
+    ul {
+        top: 450px;
+    
+        li {
+            width: 100%;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 0%;
+        align-self: flex-end;
+    }
+
+        p {
+            margin-top: 15%;
+            
+        }
 }
 
-    footer {
-        width: 67%;
-        margin-left: 0px;
-    }
-
-    
-    footer p {
-        width: 100%;
-    }
-
 @media (min-width: 600px) {
-    body {
+
+    .header-desktop {
+        display: inline-flex;
+        position: relative;
+        align-items: inherit;
+        margin-bottom: 70px;
+        margin-top: 0%;
         justify-content: center;
     }
 
-    .main {
-        justify-content: center;
-        margin-left: 0px;
+    .nyt-icon {
+        margin-left: 0;
+    }
+
+    ul {
+        top: 150px;
+    
+        li {
+            width: 33.3334%;
+        }
+    }
+
+    .copyright {
+        position: absolute;
+        margin-bottom: 20px;
+        top: 560px;
     }
 }
 
@@ -108,9 +194,45 @@ footer span {
         justify-content: initial;
     }
     
-    .main {
+    .nyt-icon {
+        margin-left: 50px;
+    }
+
+    .header-desktop {
         margin-left: 50px;
         justify-content: initial;
         flex-direction: initial;
+        position: absolute;
+    }
+
+    .section-choose {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    ul {
+        position: absolute;
+        
+        li {
+        width: 25%;
+        }
+    }
+
+    .wrap-footer {
+        width: 200px;
+        height: 100%;
+        display: flex;
+    }
+    
+    .copyright {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+        height: 70px;
+        
+        p {
+            margin-left: 70px;
+            margin-top: 0%;
+        }
     }
 }

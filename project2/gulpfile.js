@@ -10,7 +10,8 @@ var eslint = require('gulp-eslint');
 var sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
   cssnano = require("gulp-cssnano"),
-  rename = require("gulp-rename");
+  rename = require("gulp-rename"),
+  prettyError = require("gulp-prettyerror");
 
 
 // TASKS
@@ -33,7 +34,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch(['js/*.js', '*.css', '*.html'] , [ 'lint', 'scripts', 'reload']);
+    gulp.watch(['js/*.js', 'sass/*.scss', '*.html'] , [ 'lint', 'scripts', 'sass', 'reload']);
  });
  
 gulp.task('reload', ['scripts'], function() {
@@ -53,6 +54,7 @@ gulp.task('reload', ['scripts'], function() {
 gulp.task("sass", function() {
   return gulp
     .src("./sass/styles.scss")
+    .pipe(prettyError())
     .pipe(sass())
     .pipe(
       autoprefixer({
