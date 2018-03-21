@@ -1,7 +1,7 @@
 // REQUIRES
 
 var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var eslint = require('gulp-eslint');

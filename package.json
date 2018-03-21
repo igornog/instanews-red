@@ -16,5 +16,9 @@
     "gulp-prettyerror": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp-uglify": "^3.0.0"
   }
 }
