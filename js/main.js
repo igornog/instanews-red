@@ -66,7 +66,7 @@ $(function() {
                 var i = 0;
                 $.each(result.results, function(key, value){
                     if (value.multimedia[4] && i < 12) {
-                        $('.newsfeed').append('<li class="li-background" style="background-image: url('+value.multimedia[4].url+')"><a href='+value.url+'>'+'<p>'+value.title+'</p>'+'</a></li">'
+                        $('.newsfeed').append('<li class="li-background" style="background-image: url('+value.multimedia[4].url+')"><a target="blank" href='+value.url+'>'+'<p>'+value.title+'</p>'+'</a></li">'
                     );
                     i++;
                     }
