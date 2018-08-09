@@ -3,7 +3,7 @@
 # Summary
   This project is a responsive website that displays top news stories which are fetched by using an api from the New York Times. URL's and images from the New York times are appended on to the webpage, where users can filter throught different sections of articles using a drop down menu, and it will display a total of 12 stories. Compatible for mobile, table and desktop views. 
 
-# Screen Shots Desktop/Tablet/Mobile versions
+# Screenshots for Desktop/Tablet/Mobile versions
 
 <img src="screenshots/desktop.PNG" width="450px">
 <img src="screenshots/tablet.PNG" width="350px">
