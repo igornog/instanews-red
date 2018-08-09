@@ -13,9 +13,6 @@ var sass = require("gulp-sass"),
   rename = require("gulp-rename"),
   prettyError = require("gulp-prettyerror");
 
-
-// TASKS
-
 gulp.task('scripts', ['lint'], function() {
   return gulp
     .src('.js/*.js') // What files do we want gulp to consume?
@@ -47,9 +44,6 @@ gulp.task('reload', ['scripts'], function() {
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
-
-// gulp.task('script', function(){
-// })
 
 gulp.task("sass", function() {
   return gulp

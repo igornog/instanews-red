@@ -64,16 +64,17 @@ ul li {
         font-size: $base-font;
         background: rgba(0, 0, 0, 0.7);
         margin-bottom: 0;
-        height: 100px;
+        height: auto;
         text-align: initial;
+        padding: 30px 10px 30px 5px;
     }
     
     a {
         height: 500px;
         display: flex;
-        flex-direction: column-reverse;    
-    
+        flex-direction: column-reverse;
     }
+
     a:hover{
         text-decoration: none;
     }

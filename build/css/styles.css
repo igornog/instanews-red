@@ -70,8 +70,9 @@ ul li {
     font-size: 16px;
     background: rgba(0, 0, 0, 0.7);
     margin-bottom: 0;
-    height: 100px;
-    text-align: initial; }
+    height: auto;
+    text-align: initial;
+    padding: 30px 10px 30px 5px; }
   ul li a {
     height: 500px;
     display: -webkit-box;
