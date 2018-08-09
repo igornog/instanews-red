@@ -5,9 +5,9 @@
 
 # Screen Shots
 
-<img src="screenshots/desktop.png" width="450px">
-<img src="screenshots/tablet.png" width="350px">
-<img src="screenshots/mobile.png" width="250px">
+<img src="screenshots/desktop.PNG" width="450px">
+<img src="screenshots/tablet.PNG" width="350px">
+<img src="screenshots/mobile.PNG" width="250px">
 
 ## Techonologies
 
