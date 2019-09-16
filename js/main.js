@@ -54,7 +54,7 @@ $(function() {
             
             var url = 'https://api.nytimes.com/svc/topstories/v2/' + sectionSelected + '.json';
             url += '?' + $.param({
-                'api-key': 'feaf225e47ba4c55adc03b5ef13f8eed'
+                'api-key': '3UrzASky3GRnS7HMVPfM5PDCkL4jOkHh'
                 }
             );
         
